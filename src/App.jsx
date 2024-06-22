@@ -1,11 +1,14 @@
 import "./App.css";
+import Navbar from "./components/NavBar";
 
 function App() {
-  return <>
-  <div className="bg-amber-950">
-    <h1 className="bg-blue-500 text-black text-3xl">Online Job Portal</h1>
-  </div>
-  </>;
+  return (
+    <>
+      <div>
+        <Navbar />
+      </div>
+    </>
+  );
 }
 
 export default App;
