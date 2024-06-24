@@ -1,15 +1,21 @@
 import "./App.css";
 import Navbar from "./components/NavBar";
 import Header from "./components/Header";
-import SearchBar from "./components/SearchBar"
+import SearchBar from "./components/SearchBar";
+import JobCard from "./components/JobCard";
+import jobData from "./JobDummyData";
 
 function App() {
   return (
     <>
       <div>
         <Navbar />
-        <Header/>
-        <SearchBar/>
+        <Header />
+        <SearchBar />
+        {jobData.map((job) => (
+          <JobCard key={job.id} {...job}/>
+        ))}
+        
       </div>
     </>
   );
